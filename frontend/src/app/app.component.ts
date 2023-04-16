@@ -8,7 +8,7 @@ import { ApiService } from './utils/api.service';
 })
 
 export class AppComponent implements OnInit{
-  private pokemons: Pokemon[] | undefined;
+  pokemons: Pokemon[] | undefined;
 
   constructor(private api: ApiService){}
 
