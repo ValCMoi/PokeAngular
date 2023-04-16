@@ -1,7 +1,7 @@
-<h1>My Pokedex !</h1>
-<ng-container >
+<h1 class="center">My Pokedex !</h1>
 
+<div class="row container s12 m10 offset-m1 l8 offset-l2">
     <div *ngFor="let pokemon of pokemons">
         <poke-card [pokemon]="pokemon"></poke-card>
     </div>
-</ng-container>
+</div>
