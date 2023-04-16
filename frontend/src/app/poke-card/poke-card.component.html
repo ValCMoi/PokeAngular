@@ -1,6 +1,11 @@
-<p *ngIf="pokemon !== undefined">
-    {{pokemon.name}}
-</p>
+<div *ngIf="pokemon !== undefined">
+    <p>
+        {{pokemon.name}}
+    </p>
+    <img [src]='pokemon.picture'/>
+    <p>{{pokemon.cp}}</p>
+</div>
+
 <p *ngIf="pokemon == undefined">
     Data is undefined
 </p>
