@@ -13,7 +13,7 @@ export class AppComponent implements OnInit{
   constructor(private api: ApiService){}
 
   ngOnInit(): void {
-    this.api.get('get/mockup').subscribe(data => {
+    this.api.get('pokemon/mockup').subscribe(data => {
       console.table(data)
       this.pokemons = data
     })

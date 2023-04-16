@@ -18,6 +18,6 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   public get(url: String): Observable<any> {
-    return this.http.get(API_URL + '/api/' + url).pipe(map(res => res));
+    return this.http.get('http://'+API_URL + '/api/' + url).pipe(map(res => res));
   }
 }
