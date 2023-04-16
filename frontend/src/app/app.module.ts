@@ -6,16 +6,17 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ApiService } from './utils/api.service';
+import { PokeCardComponent } from './poke-card/poke-card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PokeCardComponent
   ],
   imports: [
     FormsModule, 
     HttpClientModule,
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [
     HttpClient,

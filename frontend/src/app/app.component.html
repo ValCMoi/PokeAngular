@@ -1,6 +1,7 @@
 <h1>My Pokedex !</h1>
 <ng-container >
+
     <div *ngFor="let pokemon of pokemons">
-        <p>{{pokemon.name}}</p>
+        <poke-card [pokemon]="pokemon"></poke-card>
     </div>
 </ng-container>
