@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pokemon } from './class/pokemon';
-
+import { ApiService } from './utils/api.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,9 +10,12 @@ import { Pokemon } from './class/pokemon';
 export class AppComponent implements OnInit{
   private pokemons: Pokemon[] | undefined;
 
-  constructor(){}
+  constructor(private api: ApiService){}
 
   ngOnInit(): void {
-      this.pokemons = []
+    this.api.get('get/mockup').subscribe(data => {
+      console.table(data)
+      this.pokemons = data
+    })
   }
 }

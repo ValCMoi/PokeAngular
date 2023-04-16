@@ -1,5 +1,4 @@
-const dotenv = require('dotenv');
-dotenv.config()
 export const environnement = {
-     ...process.env
+     IP_NEST:'172.42.0.4',
+     NEST_PORT_INIT:'3000'
 }
