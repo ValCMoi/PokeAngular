@@ -8,7 +8,7 @@ import { Pokemon } from './class/pokemon';
 })
 
 export class AppComponent implements OnInit{
-  private pokemons: Pokemon[];
+  private pokemons: Pokemon[] | undefined;
 
   constructor(){}
 
